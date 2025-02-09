@@ -16,25 +16,55 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="container">
-            <!-- <div class="logo">Taxaccsoft</div> -->
-            <div class="logo">
-            <!-- Company Icon -->
-            <img src="company-icon.jpeg" alt="Taxaccsoft Logo" class="company-icon">
-            Taxaccsoft
-        </div>
+        <!-- <div class="container">
+          
+                <img src="company-icon.jpeg" alt="Taxaccsoft Logo" class="company-icon">
+                <div class="logo"> TAXACCSOFT CONSULTING</div>
+                
+        <div class="hamburger" id="hamburger">&#9776;</div>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about-us">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#hiii">Industry</a></li>
-                    <li><a href="#Careers">Careers</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul id="nav-links">
+                    <span class="menu">
+                    <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                    <li><a href="#about-us" onclick="closeMenu()">About</a></li>
+                    <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                    <li><a href="#hiii" onclick="closeMenu()">Industry</a></li>
+                    <li><a href="#careers" onclick="closeMenu()">Careers</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>   
+                </span>
                 </ul>
             </nav>
-        </div>
+        </div> -->
+       
+       
+        <div class="container">
+            <img src="company-icon.jpeg" alt="Taxaccsoft Logo" class="company-icon">
+            <div class="logo"> TAXACCSOFT CONSULTING</div>
+        <nav>
+            <ul id='nav-links'>
+              
+                <input type='checkbox' id='check' /> 
+                <span class="menu">
+                    <ul id="nav-links"></ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#hiii">Industries</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    
+            </ul>    
+            
+            </span>
+            
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </div>
     </header>
+    
 
 
    <!-- Hero Section -->
@@ -68,8 +98,8 @@
     <!-- About Section -->
     <!-- About Us Section -->
     <section  id="about-us">
-        <h1 style="color: rgb(16, 16, 31);">About us</h1>
-        <div class="container">
+        <h1 style="color: rgb(16, 16, 31); ">About us</h1>
+        <div  class="container">
             <div class="mission-vision">
                 <div class="mission">
                     <h2>Our Mission</h2>
@@ -97,24 +127,25 @@
         <div class="service-box-container">
             <div style="border-color: yellow;" class="service-box" data-aos="fade-up">
                 <div class="icon">📊</div>
-                <h3>Business Analytics</h3>
+                <h3>Business Analytics & Consulting</h3>
                 <p>Transforming data into actionable insights to drive growth.</p>
             </div>
             <div class="service-box" data-aos="fade-up" data-aos-delay="200">
                 <div class="icon">💼</div>
-                <h3>Consulting</h3>
-                <p>Expert guidance tailored to your unique business needs.</p>
+                <h3>Secretaryship</h3>
+                <p>The secretaryship involves managing administrative, legal, ensuring compliance and efficient business operations.</p>
             </div>
             <div class="service-box" data-aos="fade-up" data-aos-delay="1000">
                 <div class="icon">📝</div>
-                <h3>Tax Preparation</h3>
-                <p>Accurate and timely tax preparation services for individuals and businesses.</p>
+                <h3>Tax & GST Filing</h3>
+                <p>Accurate and timely tax & GST services for individuals and businesses.</p>
             </div>
             <div class="service-box" data-aos="fade-up" data-aos-delay="1200">
                 <div class="icon">📂</div>
                 <h3>Bookkeeping</h3>
                 <p>Organized and reliable bookkeeping services for all types of businesses.</p>
             </div>
+            
             <div class="service-box" data-aos="fade-up" data-aos-delay="600">
                 <div class="icon">💵</div>
                 <h3>Small Business Tax</h3>
@@ -147,7 +178,7 @@
 
 <!-- Industry Section -->
 <section id="hiii" class="industry-section">
-    <h1>Industry services</h1>
+    <h1>Industries</h1>
     <div class="container">
         <div class="industry-card">
             <div class="card">
@@ -170,6 +201,61 @@
                 </div>
             </div>
         </div>
+        <div class="industry-card">
+            <div class="card">
+                <div class="card-front">
+                    <h3>Manufacturing</h3>
+                </div>
+                <div class="card-back">
+                    <p>The manufacturing industry involves the production of goods using labor, machines, and raw materials, contributing to economic growth and industrial development.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="industry-card">
+            <div class="card">
+                <div class="card-front">
+                    <h3>Automobiles</h3>
+                </div>
+                <div class="card-back">
+                    <p>The automobile industry focuses on designing, manufacturing, and selling motor vehicles, playing a key role in transportation and technological advancements.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="industry-card">
+            <div class="card">
+                <div class="card-front">
+                    <h3>Education</h3>
+                </div>
+                <div class="card-back">
+                    <p>The education industry encompasses institutions and organizations that provide learning and training, shaping future generations and workforce skills.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="industry-card">
+            <div class="card">
+                <div class="card-front">
+                    <h3>Real Estate</h3>
+                </div>
+                <div class="card-back">
+                    <p>The real estate industry deals with the buying, selling, and development of properties, including residential, commercial, and industrial sectors.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="industry-card">
+            <div class="card">
+                <div class="card-front">
+                    <h3>Construction & Infrastructure</h3>
+                </div>
+                <div class="card-back">
+                    <p>The construction and infrastructure industry is responsible for building residential, commercial, and public structures, driving urbanization and economic progress.</p>
+                </div>
+            </div>
+        </div>
+        
 
         <div class="industry-card">
             <div class="card">
@@ -346,25 +432,36 @@
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
-        <p class="footer-credits">© 2025 Your Company Name. All rights reserved.</p>
+        <p class="footer-credits">© 2025 Hyperion Technologies Solution. All rights reserved.</p>
     </div>
 </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
     <script>
-        AOS.init();
-        // JavaScript to toggle the display of more-info when "Know More" is clicked
-document.querySelectorAll('.know-more-btn').forEach(button => {
-    button.addEventListener('click', function() {
-        const moreInfo = this.nextElementSibling; // Get the .more-info div
-        if (moreInfo.style.display === 'block') {
-            moreInfo.style.display = 'none'; // Hide if already shown
-        } else {
-            moreInfo.style.display = 'block'; // Show the content
-        }
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+
+    // // ✅ Directly use an event listener
+    // hamburger.addEventListener("click", function () {
+        
+    //     navLinks.classList.toggle("active");
+    // });
+
+    // ✅ Close menu when clicking a link
+    document.querySelectorAll("#nav-links a").forEach(link => {
+        link.addEventListener("click", function () {
+            console.log("Closing menu");
+            navLinks.classList.remove("active");
+        });
     });
+
+    AOS.init();
 });
+
+
+
 
     </script>
 </body>
